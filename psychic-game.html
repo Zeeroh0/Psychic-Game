@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta chartype="en-us">
+  <title>Psychic Game</title>
+
+</head>
+
+<body>
+
+  <h1>Welcome to Tyler's psychic game!</h1>
+
+  <h2>Care to play a game?</h2>
+
+  <script>
+   var letters = ["a", "b", "c"];
+
+   // This array will hold what we guess
+   var guessedLetters = [];
+
+   // This variable will be randomly assigned one of the three letters
+   var letterToGuess = null;
+
+   // This is what we'll use to count down
+   var guessesLeft = 9;
+
+   // This is the counter for wins/losses
+   var wins = 0;
+   var losses = 0;
+   document.onkeyup = function(event) {
+   // Lowercase the letter
+   var letter = String.fromCharCode(event.keyCode).toLowerCase();
+
+   // We'll check if there's a match.
+   if (letter === letterToGuess) {
+
+   // If there is then we win and we'll update the HTML to display the win.
+   wins++;
+ </script>
+
+</body>
+</html>
