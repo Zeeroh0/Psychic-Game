@@ -8,64 +8,38 @@
 
 <body>
 
-  <h1>Welcome to Tyler's psychic game!</h1>
+    <h1>Welcome to Tyler's psychic game!</h1>
 
-  <hr>
+    <hr>
 
-  <h2>Care to play a game?</h2>
-  <h5>But of course, we <i><strong>both</strong></i> already know the answer to that question, don't we?</h5>
+    <h2>Care to play a game?</h2>
+    <h5>But of course, we <i><strong>both</strong></i> already know the answer to that question, don't we?</h5>
 
-  <hr>
-  <br>
-  <h3>What what letter I am thinking of</h3>
-  <!-- Show cummulative wins, -->
-  <h3>Wins: </h3>
-<!--   losses,-->  
-  <h3>Losses: </h3>
-<!--and remaining guesses.-->  
-  <h3>Guesses left: </h3>
-<!--   Here, show what they've guessed so far with the array guessedLetters -->  
-  <h3>Your guesses so far: </h3>
+    <hr>
+    <br>
+    <h3>What what letter I am thinking of</h3>
+    <!-- Show cummulative wins, -->
+    <button class="generateLetter">Click here to get started!</button>
 
+    <!--   Here, show what they've guessed so far with the array guessedLetters -->  
+    <h3 class="listGuesses">Your guesses so far: </h3>
+    <!--and remaining guesses.-->  
+    <h3 class="remainingGuesses">Guesses left: </h3>
 
 
-  <script>
-  var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    <h3 class="wins">Wins: </h3>
+    <!--   losses,-->  
+    <h3 class="losses">Losses: </h3>
 
-   // This array will hold what the player guesses
-   var guessedLetters = [];
+    <h3>Guess me: <div class="mysteryNumber"></div></h3>
 
-   // This variable will be randomly assigned one of the 26 letters in var letters
-   var letterToGuess = ;
 
-   // This is what we'll use to count down from
-   var guessesLeft = 9;
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-   // This is the counter for wins/losses
-   var wins = 0;
-   var losses = 0;
+    <script type="text/javascript" src="assets/javascript/game.js" ></script>
 
-   //Creat onkeyup event function for when the player presses their guesses
-   document.onkeyup = function(event) {
-    // Lowercase the letter
-    var letter = String.fromCharCode(event.keyCode).toLowerCase();
-    // We'll check if there's a match.
-    if (letter === letterToGuess) {
-      // If there is then we win and we'll update the HTML to display the win.
-      wins++;
-    } else {
-      //If a loss,
-      losses++;
-      guessesLeft--;
-    }
-  }
 
- </script>
-
-<!--  Need to do:
- Need to display the values of the defined variables in the html...use w class selectors?
-
- Styling ideas:
+<!--  Styling ideas:
  Colored background that grows more 'dreary' as the user approaches a loss 
  Brief celebratory screen/alert?
  -->
