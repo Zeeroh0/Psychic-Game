@@ -6,7 +6,7 @@
 
 </head>
 
-<body>
+<body class="winner">
 
     <h1>Welcome to Tyler's psychic game!</h1>
 
@@ -17,17 +17,22 @@
 
     <hr>
     <br>
-    <h3>What what letter I am thinking of</h3>
+
+    <h3>What what letter I am thinking of?</h3>
 
     <!--   Here, show what they've guessed so far with the array guessedLetters -->  
-    <h3 class="listGuesses">Your guesses so far: </h3>
-    <!-- and remaining guesses.-->  
-    <h3 class="remainingGuesses">Guesses left: </h3>
-    <!-- Show cummulative wins, -->
-    <h3 class="wins">Wins: </h3>
-    <!-- and losses.-->  
-    <h3 class="losses">Losses: </h3>
+    <div class="stats">
+        <p><h3>Guessed so far: </h3>
+        <!-- and remaining guesses.-->  
+        <p><h3>Remaining Guesses: </h3>
+        <!-- Show cummulative wins, -->
+        <p><h3>Wins: </h3>
+        <!-- and losses.-->  
+        <p><h3>Losses: </h3>
+    </div>
 
+
+    <!-- Use this for trouble shooting to more clearly display the current computer guess -->
     <h3>Guess me: <div class="mysteryNumber"></div></h3>
 
 
