@@ -6,7 +6,7 @@
 
 </head>
 
-<body class="winner">
+<body id="winner">
 
     <h1>Welcome to Tyler's psychic game!</h1>
 
@@ -20,8 +20,8 @@
 
     <h3>What what letter I am thinking of?</h3>
 
-    <!--   Here, show what they've guessed so far with the array guessedLetters -->  
     <div class="stats">
+        <!--   Here, show what they've guessed so far with the array guessedLetters -->  
         <p><h3>Guessed so far: </h3>
         <!-- and remaining guesses.-->  
         <p><h3>Remaining Guesses: </h3>
@@ -32,18 +32,14 @@
     </div>
 
 
-    <!-- Use this for trouble shooting to more clearly display the current computer guess -->
-    <h3>Guess me: <div class="mysteryNumber"></div></h3>
-
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="assets/javascript/game.js" ></script>
 
 
 <!--  Styling ideas:
  Colored background that grows more 'dreary' as the user approaches a loss 
  Brief celebratory screen/alert?
+ Alerts would be simple...maybe a joke 'win' image after enough wins are tallied?
  -->
 
 </body>
